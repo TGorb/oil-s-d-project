@@ -19,3 +19,18 @@ crude metric EIA itself tracks internally.
 **Concepts covered:** multi-series API pulls, DataFrame merges, unit 
 conversion (rate vs level), custom functions, dictionaries, string 
 formatting
+
+
+### 2. 3-2-1 Crack Spread
+`crack_spread.py` — Pulls WTI, Gulf Coast gasoline, and Gulf Coast diesel 
+spot prices from EIA, converts products to $/barrel, and calculates the 
+3-2-1 crack spread as a proxy for refinery margins.
+
+**What it shows:** Whether refining margins are running normal, elevated, 
+or under acute stress relative to the standard $10-25/bbl healthy range. 
+As of late June 2026, the spread is running $40-60/bbl — well into acute 
+stress territory, driven by the lagged recovery of refined product prices 
+following the Hormuz-related crude spike earlier in the year.
+
+**Concepts covered:** multi-series price pulls, unit conversion ($/gallon 
+to $/barrel), threshold-based signal logic, rolling averages
